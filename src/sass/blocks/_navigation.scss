@@ -1,0 +1,81 @@
+.navigation {
+  color: $color-default-white;
+  padding: 20px 0;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+
+  @include vp-767 {
+    display: none;
+  }
+
+  &.is-active {
+    @include vp-767 {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80%;
+      max-width: 320px;
+      z-index: 60;
+      padding: 40px 20px;
+      background: $color-jaguar;
+      height: 100vh;
+    }
+  }
+
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    margin-right: 60px;
+
+    @include vp-1023 {
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+   &--isActive {
+     color: $color-summer-sky;
+   }
+  }
+
+  a {
+    color: inherit;
+    text-transform: uppercase;
+    transition: color $trans-default;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover {
+        color: $color-summer-sky-3;
+      }
+    }
+
+    &:focus {
+      color: $color-summer-sky-3;
+    }
+
+    &:active {
+      color: $color-summer-sky-3;
+    }
+  }
+
+  &.is-active .navigation__list {
+    @include vp-767 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px
+    }
+  }
+}
+

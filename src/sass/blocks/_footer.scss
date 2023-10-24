@@ -1,0 +1,116 @@
+.footer {
+  background: $color-blue-zodiac;
+  padding: 30px 0;
+  color: $color-default-white;
+  font-size: 13px;
+  line-height: 15.6px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    align-items: center;
+
+    @include vp-1279 {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 30px;
+    }
+  }
+
+  &__copy {
+    margin: 0;
+
+    span {
+      text-transform: uppercase;
+    }
+
+    @include vp-1023 {
+      text-align: center;
+    }
+  }
+
+  &__payment {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 38px;
+    justify-content: center;
+    border-left: 1px solid $color-silver-2;
+    border-right: 1px solid $color-silver-2;
+
+    @include vp-1279 {
+      gap: 20px;
+      border: none;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+    }
+
+  }
+
+  &__payment-item {
+    display: flex;
+    flex-direction: row;
+    color: $color-silver-2;
+    align-items: center;
+
+    @include vp-1023 {
+      border: none;
+    }
+
+  }
+
+  &__payment-icon,
+  &__social-icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: $color-summer-sky-2;
+  }
+
+  &__social {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 38px;
+    justify-content: flex-end;
+
+    @include vp-1279 {
+      gap: 20px;
+    }
+
+    @include vp-767 {
+      gap: 15px;
+    }
+  }
+
+  &__social-item a {
+    display: flex;
+    flex-direction: row;
+    color: inherit;
+    align-items: center;
+    transition: color $trans-default;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover {
+        color: $color-summer-sky-2;
+      }
+    }
+
+    &:focus {
+      color: $color-summer-sky-2;
+    }
+
+    &:active {
+      color: $color-summer-sky-2;
+    }
+  }
+}

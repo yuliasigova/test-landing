@@ -1,0 +1,22 @@
+{
+  "name": "testtask",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
+    "sass": "^1.69.4",
+    "select-pure": "^2.1.4",
+    "vite-plugin-image-optimizer": "^1.1.7",
+    "vite-svg-sprite-wrapper": "^1.1.0"
+  }
+}
