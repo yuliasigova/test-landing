@@ -5,6 +5,7 @@ import imageminWebp from 'imagemin-webp'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig( {
+    base: '',
     plugins: [
         ViteSvgSpriteWrapper({
             icons: 'src/img/svg/*.svg',
@@ -19,13 +20,13 @@ export default defineConfig( {
             },
         }),
         {
-            ...imagemin(['./src/img/**/*.{jpg,png,jpeg}'], {
+            ...imagemin(['./src/img/**/*.{jpg,jpeg}'], {
                 destination: './src/img',
                 plugins: [
                     imageminWebp({ quality: 70 })
                 ]
             }),
-            // apply: 'serve',
+            apply: 'dev',
         }
         ],
 
