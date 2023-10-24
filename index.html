@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тестовое задание</title>
-    <script type="module" crossorigin src="./assets/index-8b8a7398.js"></script>
-    <link rel="stylesheet" href="./assets/index-b1ed7ab4.css">
+    <script type="module" crossorigin src="./assets/index-7fafe452.js"></script>
+    <link rel="stylesheet" href="./assets/index-81953bf0.css">
   </head>
   <body >
   <header class="header">
@@ -15,9 +15,16 @@
       </div>
 
       <button class="header__button">
-
+        <svg width="30" height="30">
+          <use xlink:href="./assets/sprite-c5eed226.svg#icon-burger"></use>
+        </svg>
       </button>
-      <nav class="navigation is-active">
+      <nav class="navigation">
+        <button class="navigation__button">
+          <svg width="30" height="30">
+            <use xlink:href="./assets/sprite-c5eed226.svg#icon-burger-close"></use>
+          </svg>
+        </button>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--isActive">
             <a href="#">Бизнес </a></li>
@@ -34,7 +41,11 @@
   <main class="main">
     <section class="info">
       <div class="info__img">
-        <img src="./assets/main-20fca923.jpg" width="100%" height="850" alt="Главное изображение">
+        <picture>
+          <source type="image/webp" srcset="src/img/main.webp, scr/img/main-2x.webp 2x" >
+          <img src="./assets/main-20fca923.jpg" srcset="./assets/main-2x-b5a68f85.jpg 2x" width="1919" height="850" alt="Главное изображение">
+        </picture>
+
       </div>
       <div class="container">
         <div class="info__content">
@@ -66,7 +77,7 @@
           <li class="order__item">
             <span>
                 <svg width="33" height="33">
-              <use xlink:href="./assets/sprite-afb0f9a1.svg#search"></use>
+              <use xlink:href="./assets/sprite-c5eed226.svg#search"></use>
             </svg>
             </span>
             Lorem ipsum dolor
@@ -75,21 +86,21 @@
           <li class="order__item">
              <span>
                 <svg width="30" height="30">
-              <use xlink:href="./assets/sprite-afb0f9a1.svg#percent"></use>
+              <use xlink:href="./assets/sprite-c5eed226.svg#percent"></use>
             </svg>
             </span>
             Сonsecteturadipiscing elit</li>
           <li class="order__item">
              <span>
                 <svg width="38" height="41">
-              <use xlink:href="./assets/sprite-afb0f9a1.svg#file"></use>
+              <use xlink:href="./assets/sprite-c5eed226.svg#file"></use>
             </svg>
             </span>
             Sed do eiusmod tempor</li>
           <li class="order__item">
           <span>
                 <svg width="36" height="29">
-              <use xlink:href="./assets/sprite-afb0f9a1.svg#message"></use>
+              <use xlink:href="./assets/sprite-c5eed226.svg#message"></use>
             </svg>
             </span>
             Esse cillum dolore
@@ -98,7 +109,7 @@
           <li class="order__item">
             <span>
                 <svg width="38" height="25">
-              <use xlink:href="./assets/sprite-afb0f9a1.svg#money"></use>
+              <use xlink:href="./assets/sprite-c5eed226.svg#money"></use>
             </svg>
             </span>
             Excepteur sint occaecat cupidatat non proident
@@ -160,7 +171,7 @@
            <input class="visually-hidden" type="file" name="file" id="file">
            <label class="form__file-label" for="file">
              <span> <svg width="17" height="20">
-              <use xlink:href="./assets/sprite-afb0f9a1.svg#file2"></use>
+              <use xlink:href="./assets/sprite-c5eed226.svg#file2"></use>
             </svg> </span>
              Прикрепить файл
            </label>
@@ -184,20 +195,20 @@
         <li class="footer__payment-item">
            <span class="footer__payment-icon">
                 <svg width="20" height="20">
-              <use xlink:href="./assets/sprite-afb0f9a1.svg#qiwi"></use>
+              <use xlink:href="./assets/sprite-c5eed226.svg#qiwi"></use>
             </svg></span>
           QIWI wallet</li>
         <li class="footer__payment-item">
            <span class="footer__payment-icon">
                 <svg width="20" height="20">
-              <use xlink:href="./assets/sprite-afb0f9a1.svg#yandex"></use>
+              <use xlink:href="./assets/sprite-c5eed226.svg#yandex"></use>
                 </svg></span>
           Yandex Money
              </li>
         <li class="footer__payment-item">
            <span class="footer__payment-icon">
                 <svg width="20" height="20">
-              <use xlink:href="./assets/sprite-afb0f9a1.svg#web"></use>
+              <use xlink:href="./assets/sprite-c5eed226.svg#web"></use>
                 </svg></span>
           Web Money</li>
       </ul>
@@ -206,7 +217,7 @@
           <a href="mailto:info@ipsum228.com">
              <span class="footer__social-icon">
                 <svg width="15" height="11">
-              <use xlink:href="./assets/sprite-afb0f9a1.svg#message"></use>
+              <use xlink:href="./assets/sprite-c5eed226.svg#message"></use>
                 </svg></span>
             info@ipsum228.com</a>
         </li>
@@ -214,7 +225,7 @@
           <a href="#" target="_blank">
              <span class="footer__social-icon">
                 <svg width="11" height="13">
-              <use xlink:href="./assets/sprite-afb0f9a1.svg#vk"></use>
+              <use xlink:href="./assets/sprite-c5eed226.svg#vk"></use>
                 </svg></span>
             Мы вконтакте</a>
         </li>
