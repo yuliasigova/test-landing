@@ -1,6 +1,6 @@
 .order {
   background: $color-jaguar;
-  background-image: url('../../img/bg.png');
+  background-image: url('/src/img/bg.png');
   color: $color-default-white;
   padding: 121px 0;
   background-repeat: no-repeat;
@@ -35,11 +35,32 @@
   &__list {
     margin: 0;
     padding: 0;
+    position: relative;
     list-style: none;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
     margin-bottom: 80px;
+    z-index: 2;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('/src/img/points.png');
+      top: 50px;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 6px;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: center;
+      background-size: contain;
+      z-index: -1;
+
+      @include vp-1023 {
+        background-image: none;
+      }
+    }
 
     @include vp-1023 {
       grid-template-columns: 1fr;
@@ -65,21 +86,6 @@
       margin-bottom: 20px;
       background: $color-summer-sky-2;
       border: 5px solid $color-endeavour;
-    }
-
-    &:nth-of-type(5n+1) span {
-      position: relative;
-
-      &::after {
-        position: absolute;
-        content: '';
-        background-image: url(../../img/points.png);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height: 6px;
-      }
     }
 
   }

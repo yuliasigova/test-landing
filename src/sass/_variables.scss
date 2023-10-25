@@ -3,21 +3,21 @@ $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
 $color-summer-sky:                  #43ABF0;
 $color-summer-sky-2:                #3E9CDC;
-$color-summer-sky-3:                 #42A9ED;
+$color-summer-sky-3:                #42A9ED;
 $color-endeavour:                   #286690;
 $color-jaguar:                      #272733;
-$color-blue-zodiac: #3D4050;
-$color-dolphin: #6F6D7B;
+$color-blue-zodiac:                 #3D4050;
+$color-dolphin:                     #6F6D7B;
 $color-silver:                      #BBBBBB;
-$color-silver-2: #C3C3C3;
-$color-black-russian: #2A2B30;
+$color-silver-2:                    #C3C3C3;
+$color-black-russian:               #2A2B30;
 $color-black-russian--90:           rgba(16, 16, 29, 0.9);
+$color-jaguar--90:                  rgba(39, 39, 51, 0.90);
 
 
 // Typography
 // ---------------------------------
 
-// переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
 
 $ff-lato:                    "Lato", "Arial", sans-serif;
@@ -29,15 +29,8 @@ $ff-raleway:                  "Raleway", "Arial", sans-serif;
 
 $tf-default:                        ease;
 $trans-duration:                    0.2s;
-$trans-duration-500:                0.5s;
 $trans-default:                     0.2s $tf-default;
-$trans-400:                         0.4s $tf-default;
 
-// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
-$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
-$trans-video:                       ease-out 1s 0.4s;
-$trans-tabs:                        0.3s ease-in;
-$trans-600:                         0.6s $tf-default;
 
 // Viewports
 // ---------------------------------

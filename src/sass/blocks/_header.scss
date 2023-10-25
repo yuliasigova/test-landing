@@ -1,6 +1,6 @@
 .header {
   background: $color-black-russian--90;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -12,13 +12,18 @@
     justify-content: space-between;
     align-items: center;
     min-height: 100px;
+    max-width: 1172px;
+    margin: 0 auto;
 
-    @include vp-1023 {
+    @include vp-1279 {
+      padding: 0 40px;
+      margin: 0 auto;
       min-height: 70px;
     }
 
     @include vp-767 {
       min-height: 50px;
+      padding: 0 20px;
     }
   }
 
