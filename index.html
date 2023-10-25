@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тестовое задание</title>
 
-
-    <script type="module" crossorigin src="./assets/index-e3802040.js"></script>
-    <link rel="stylesheet" href="./assets/index-0cad6f34.css">
+    <script type="module" crossorigin src="./assets/index-e12538e2.js"></script>
+    <link rel="stylesheet" href="./assets/index-9a7ef87b.css">
   </head>
   <body>
   <div class="wrapper">
@@ -121,34 +120,37 @@
           <form class="order__form form" action="#">
             <div class="form__wrapper">
               <div class="form__select">
-                 <span class="form__select-icon">
+                <div class="form__select-block" tabindex="0">
+                 <span class="form__select-value"> Выберите тип системы</span>
+                  <span class="form__select-icon">
                   <svg width="21" height="21">
                     <use xlink:href="./assets/sprite-fde31532.svg#arrow"></use>
                     </svg>
                   </span>
-                <label for="mySelect"></label>
-                <select  id="mySelect" placeholder=" Выберите тип системы">
+                </div>
 
-                  <option class="form__select-option" value="">
-                    Выберите тип системы
-                  </option>
-                  <option class="form__select-option" value="Nemo enim ipsam">
-                    Nemo enim ipsam
-                  </option>
-                  <option class="form__select-option" value="Et harum quidem">
-                    Et harum quidem
-                  </option>
-                  <option class="form__select-option" value="Temporibus autem">
-                    Temporibus autem
-                  </option>
-                  <option class="form__select-option" value="Temporibus autem">
-                    Itaque earum rerum
-                  </option>
-                  <option class="form__select-option" value="Sed ut perspiciatis">
-                    Sed ut perspiciatis
-                  </option>
-                </select>
-
+                <ul class="form__select-dropdown" role="listbox" id="select-dropdown">
+                  <li role="option">
+                    <input class="visually-hidden" type="radio" id="Nemo enim ipsam" name="type-system" value="Nemo enim ipsam"/>
+                    <label for="Nemo enim ipsam">Nemo enim ipsam</label>
+                  </li>
+                  <li role="option" >
+                    <input class="visually-hidden" type="radio" id=" Et harum quidem" name="type-system" value=" Et harum quidem"/>
+                    <label for=" Et harum quidem"> Et harum quidem</label>
+                  </li>
+                  <li role="option">
+                    <input class="visually-hidden" type="radio" id="Temporibus autem" name="type-system" value="Temporibus autem" />
+                    <label for="Temporibus autem">Temporibus autem</label>
+                  </li>
+                  <li role="option" >
+                    <input class="visually-hidden" type="radio" id="Itaque earum rerum" name="type-system" value="Itaque earum rerum"/>
+                    <label for="Itaque earum rerum"> Itaque earum rerum</label>
+                  </li>
+                  <li role="option" >
+                    <input class="visually-hidden" type="radio" id="Sed ut perspiciatis" name="type-system"  value="Sed ut perspiciatis"/>
+                    <label for="Sed ut perspiciatis" >Sed ut perspiciatis</label>
+                  </li>
+                </ul>
               </div>
               <div>
                 <label>
