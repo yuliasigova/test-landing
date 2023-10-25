@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тестовое задание</title>
-    <script type="module" crossorigin src="./assets/index-7fafe452.js"></script>
-    <link rel="stylesheet" href="./assets/index-81953bf0.css">
+
+
+    <script type="module" crossorigin src="./assets/index-70b56ed6.js"></script>
+    <link rel="stylesheet" href="./assets/index-fc176a08.css">
   </head>
   <body >
   <header class="header">
@@ -16,13 +18,13 @@
 
       <button class="header__button">
         <svg width="30" height="30">
-          <use xlink:href="./assets/sprite-c5eed226.svg#icon-burger"></use>
+          <use xlink:href="./assets/sprite-fde31532.svg#icon-burger"></use>
         </svg>
       </button>
       <nav class="navigation">
         <button class="navigation__button">
           <svg width="30" height="30">
-            <use xlink:href="./assets/sprite-c5eed226.svg#icon-burger-close"></use>
+            <use xlink:href="./assets/sprite-fde31532.svg#icon-burger-close"></use>
           </svg>
         </button>
         <ul class="navigation__list">
@@ -42,8 +44,8 @@
     <section class="info">
       <div class="info__img">
         <picture>
-          <source type="image/webp" srcset="src/img/main.webp, scr/img/main-2x.webp 2x" >
-          <img src="./assets/main-20fca923.jpg" srcset="./assets/main-2x-b5a68f85.jpg 2x" width="1919" height="850" alt="Главное изображение">
+          <source type="image/webp" srcset="./assets/main-f7c65b94.webp , ./assets/main-2x-c93fc08f.webp 2x">
+          <img srcset="./assets/main-2x-d64aaac8.jpg 2x" src="./assets/main-3233492e.jpg" width="1919" height="850" alt="Главное изображение">
         </picture>
 
       </div>
@@ -77,7 +79,7 @@
           <li class="order__item">
             <span>
                 <svg width="33" height="33">
-              <use xlink:href="./assets/sprite-c5eed226.svg#search"></use>
+              <use xlink:href="./assets/sprite-fde31532.svg#search"></use>
             </svg>
             </span>
             Lorem ipsum dolor
@@ -86,21 +88,21 @@
           <li class="order__item">
              <span>
                 <svg width="30" height="30">
-              <use xlink:href="./assets/sprite-c5eed226.svg#percent"></use>
+              <use xlink:href="./assets/sprite-fde31532.svg#percent"></use>
             </svg>
             </span>
             Сonsecteturadipiscing elit</li>
           <li class="order__item">
              <span>
                 <svg width="38" height="41">
-              <use xlink:href="./assets/sprite-c5eed226.svg#file"></use>
+              <use xlink:href="./assets/sprite-fde31532.svg#file"></use>
             </svg>
             </span>
             Sed do eiusmod tempor</li>
           <li class="order__item">
           <span>
                 <svg width="36" height="29">
-              <use xlink:href="./assets/sprite-c5eed226.svg#message"></use>
+              <use xlink:href="./assets/sprite-fde31532.svg#message"></use>
             </svg>
             </span>
             Esse cillum dolore
@@ -109,7 +111,7 @@
           <li class="order__item">
             <span>
                 <svg width="38" height="25">
-              <use xlink:href="./assets/sprite-c5eed226.svg#money"></use>
+              <use xlink:href="./assets/sprite-fde31532.svg#money"></use>
             </svg>
             </span>
             Excepteur sint occaecat cupidatat non proident
@@ -118,31 +120,34 @@
         <form class="order__form form" action="#">
           <div class="form__wrapper">
             <div class="form__select">
-              <label>
-                <select-pure class="form__select-select">
-                  <option-pure value="" disabled>
+                 <span class="form__select-icon">
+                  <svg width="21" height="21">
+                    <use xlink:href="./assets/sprite-fde31532.svg#arrow"></use>
+                    </svg>
+                  </span>
+              <label for="mySelect"></label>
+                <select  id="mySelect" placeholder=" Выберите тип системы">
+
+                  <option class="form__select-option" value="">
                     Выберите тип системы
-                  </option-pure>
-                  <option-pure value="Sed ut perspiciatis">
-                    Sed ut perspiciatis
-                  </option-pure>
-                  <option-pure value="Nemo enim ipsam">
+                  </option>
+                  <option class="form__select-option" value="Nemo enim ipsam">
                     Nemo enim ipsam
-                  </option-pure>
-                  <option-pure value="Et harum quidem">
+                  </option>
+                  <option class="form__select-option" value="Et harum quidem">
                     Et harum quidem
-                  </option-pure>
-                  <option-pure value="Temporibus autem">
+                  </option>
+                  <option class="form__select-option" value="Temporibus autem">
                     Temporibus autem
-                  </option-pure>
-                  <option-pure value="Temporibus autem">
+                  </option>
+                  <option class="form__select-option" value="Temporibus autem">
                     Itaque earum rerum
-                  </option-pure>
-                  <option-pure value="Sed ut perspiciatis">
+                  </option>
+                  <option class="form__select-option" value="Sed ut perspiciatis">
                     Sed ut perspiciatis
-                  </option-pure>
-                </select-pure>
-              </label>
+                  </option>
+                </select>
+
             </div>
           <div>
             <label>
@@ -171,7 +176,7 @@
            <input class="visually-hidden" type="file" name="file" id="file">
            <label class="form__file-label" for="file">
              <span> <svg width="17" height="20">
-              <use xlink:href="./assets/sprite-c5eed226.svg#file2"></use>
+              <use xlink:href="./assets/sprite-fde31532.svg#file2"></use>
             </svg> </span>
              Прикрепить файл
            </label>
@@ -195,20 +200,20 @@
         <li class="footer__payment-item">
            <span class="footer__payment-icon">
                 <svg width="20" height="20">
-              <use xlink:href="./assets/sprite-c5eed226.svg#qiwi"></use>
+              <use xlink:href="./assets/sprite-fde31532.svg#qiwi"></use>
             </svg></span>
           QIWI wallet</li>
         <li class="footer__payment-item">
            <span class="footer__payment-icon">
                 <svg width="20" height="20">
-              <use xlink:href="./assets/sprite-c5eed226.svg#yandex"></use>
+              <use xlink:href="./assets/sprite-fde31532.svg#yandex"></use>
                 </svg></span>
           Yandex Money
              </li>
         <li class="footer__payment-item">
            <span class="footer__payment-icon">
                 <svg width="20" height="20">
-              <use xlink:href="./assets/sprite-c5eed226.svg#web"></use>
+              <use xlink:href="./assets/sprite-fde31532.svg#web"></use>
                 </svg></span>
           Web Money</li>
       </ul>
@@ -217,7 +222,7 @@
           <a href="mailto:info@ipsum228.com">
              <span class="footer__social-icon">
                 <svg width="15" height="11">
-              <use xlink:href="./assets/sprite-c5eed226.svg#message"></use>
+              <use xlink:href="./assets/sprite-fde31532.svg#message"></use>
                 </svg></span>
             info@ipsum228.com</a>
         </li>
@@ -225,7 +230,7 @@
           <a href="#" target="_blank">
              <span class="footer__social-icon">
                 <svg width="11" height="13">
-              <use xlink:href="./assets/sprite-c5eed226.svg#vk"></use>
+              <use xlink:href="./assets/sprite-fde31532.svg#vk"></use>
                 </svg></span>
             Мы вконтакте</a>
         </li>
